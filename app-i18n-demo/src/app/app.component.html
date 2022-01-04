@@ -1,0 +1,14 @@
+
+<h1 i18n="main-header|Buongiorno mondo@@helloWorld"> Buongiorno, mondo! </h1>
+
+<a href="/en-US/home" i18n-href> Home Page </a>
+
+<ul>
+  <li *ngFor="let locale of localesList">
+    <a href="/{{locale.code}}/">
+      {{locale.label}}
+    </a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
